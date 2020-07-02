@@ -1,0 +1,322 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+    color: #464646;
+}
+
+a {
+    font-size: 16px;
+    color: #EBC154;
+}
+
+a:hover {
+    font-size: 16px;
+    color: #EBC154;
+}
+
+.section-padding {
+    padding-top: 80px;
+}
+
+
+/** NAVIGATION STYLING STARTS HERE **/
+
+nav {
+    height: 60px;
+    z-index: 100;
+}
+
+.active .nav-link {
+    color: #EBC154 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bg-dark {
+    background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.144))!important;
+}
+
+
+#top-cities h2::after, #hotels h2::after, #about-section h2::after, #testimonials h2::after {
+    content: '';
+    background-color: #EBC154;
+    width: 150px;
+    height: 10px;
+    display: block;
+    margin-top: 7px;
+}
+
+/* footer  */
+
+
+footer input.form-control {
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #fff !important;
+}
+
+footer .footer-btn {
+    background-color: #EBC154;
+    color: #fff;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer input.form-control:focus {
+    outline: none !important;
+
+}
+
+.footer-nav-link {
+    font-size: 16px;
+    color: #fff;
+}
+
+footer hr {
+    border: 0.5px solid #fff;
+    margin-top: 0;
+}
+
+footer .social-icons div {
+    background-color: #EBC154;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+footer .social-links i {
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .footer-navigation {
+    padding: 0 40px;
+    margin-top: 92px;
+}
+
+
+
+/** ABOUT PAGE STARTS HERE **/
+
+#about-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/about-video.jpg);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+    padding-top: 20%;
+    margin-top: -80px;
+}
+
+#about-hero h1 {
+    font-size: 64px;
+}
+
+#about-hero .play-icon {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+#about-hero .play-icon i {
+    font-size: 48px;
+    color: #fff;
+}
+
+#who-we-are {
+    padding: 100px 30px 0;
+}
+
+#who-we-are h2::after, #company-statement h2::after, #team h2::after {
+    content: '';
+    background-color: #EBC154;
+    width: 150px;
+    height: 10px;
+    display: block;
+    margin-top: 7px;
+}
+
+
+#company-statement {
+    padding: 52px 30px 0;
+}
+
+#team {
+    padding: 120px 30px 0;
+}
+
+#team img {
+    width: 350px;
+    height: 350px;
+}
+
+#team .member-role {
+    color: #EBC154;
+}
+
+
+
+/** Hotels Page Starts Here **/
+
+#hotel-hero {
+    margin-top: -80px;
+}
+
+#hotel-hero h1 {
+    font-size: 72px;
+}
+
+#hotel-hero img {
+    height: 100vh;
+}
+
+#filter-search {
+    padding: 0 30px;
+}
+
+#filter-search select {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
+    font-size: 16px;
+    padding: 4px 20px;
+}
+
+#hotels-booking-cards {
+    padding: 33px 40px 0;
+}
+
+.hotel-card {
+    max-width: 100%;
+    border-radius: 15px;
+    height: 20rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
+
+}
+
+.hotel-card .row {
+    height: 100%;
+}
+
+.hotel-card .card-img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 20rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    object-fit: cover;
+}
+
+.hotel-card .custom-btn {
+    border-radius: 20px;
+    background-color: #EBC154;
+    padding: 12px 30px;
+}
+
+#hotels-list-pagination a {
+    background-color: #464646;
+}
+
+#hotels-list-pagination a.active {
+    background-color: #EBC154;
+}
+
+#service-features {
+    padding: 82px 40px 0;
+}
+
+#service-features .card {
+    box-shadow: 0px 0px 15px #C4C4C4;
+    border-radius: 20px;
+}
+
+#service-features .card-img-top {
+    height: 5rem;
+}
+
+.hotels-footer {
+    margin-top: 41px;
+}
+
+
+
+/** FAQ PAGE STARTS HERE **/
+
+#faq-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/faq-page/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: calc(100vh + 20px);
+    margin-top: -80px;
+}
+
+#faq-hero div {
+    height: 100%;
+}
+
+#tab-plus-title {
+    padding: 40px 40px 0;
+}
+
+#tab-plus-title h2::after {
+    content: '';
+    background-color: #EBC154;
+    width: 150px;
+    height: 10px;
+    margin-top: 7px;
+    display: block;
+    margin: 0 auto;
+}
+
+#tab-plus-title  ul li .nav-link {
+    color: black !important;
+    font-size: 22px;
+}
+
+#tab-plus-title  ul li.nav-item .active {
+    color: #EBC154 !important;
+}
+
+#tab-plus-title #faq-accordion .btn-link {
+    color: #EBC154;
+}
+
+#tab-plus-title #faq-accordion .btn-link:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+#tab-plus-title #faq-accordion .card {
+    box-shadow: 0px 0px 10px rgba(196, 196, 196, 0.8);
+    border-radius: 10px;
+}
+
+#tab-plus-title #faq-accordion .card-header {
+    border-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+}

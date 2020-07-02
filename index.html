@@ -1,26 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- montserrat font  -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8" />
 
-    <title>Hotels</title>
-    <style>
+    <!-- Optimized viewport for mobile -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- Website description -->
+    <meta name="description" content="Template name: HTML website template for any brand"/>
+    <meta name="keywords" content="interior design, HTML templates, interior design website"/>
+
+    <!-- Website title-->
+    <title>OUR HOTELS</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href=""/>
+
+   <!-- montserrat font  -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+
+    <!-- CSS links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="footer_header.css" />
+
+
+
+
+    <style>  
       *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-      }
-      body,html{
+      } 
+     body,html{
         overflow-x: hidden;
       }
-     
+     .card-img {
+        background: linear-gradient(rgba(7, 7, 7, 0.507),rgba(7, 7, 7, 0.514)),url(/img/home.jpg) ;
+        background-position: center;
+        background-size: cover;
+
+     }
       .h:hover,.h:focus {
         background-color: #EBC154!important;
       }
@@ -28,12 +51,29 @@
         font-family: 'Montserrat', sans-serif;
       }
 
+      /* large screen  */
+
+      @media (min-width: 1000px) {
+      
+        .small {
+          font-size: 1.2rem!important;
+          margin: 0!important;
+        }
+        .trans {
+          transform: translateY(50%);
+        }
+      
+      }
+
       /* medium screens  */
 
       @media (max-width: 1000px) {
         .display-1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
+      .trans {
+          transform: translateY(0);
+        }
         .small {
           font-size: 10px!important;
           margin: 0!important;
@@ -42,7 +82,8 @@
           font-size: 18px!important;
         }
         .small-3 {
-          width: 50vw!important;
+          width: 40vw!important;
+          margin: auto!important;
         }
       }
 
@@ -59,8 +100,54 @@
   </head>
   <body>
 
-    <div class="card bg-dark" style="border-radius: 0;">
-        <img src="img/home.jpg" style="height: 100vh;" class="card-img min-vh-100 rounded-0;" alt="...">
+    <!-- HEADER SECTION STARTS HERE -->
+
+    <header>
+
+      <!-- NAVIGATION STARTS HERE -->
+      <div class="card overlay bg-dark position-relative" style="border-radius: 0;">
+
+        
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-3 fixed-top" >
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <img src="./img/discover_travel_logo-2.png" class="pb-3" alt="discover_travel_logo" width="150px">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsiveNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="responsiveNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active mr-4">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="#" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="#" class="nav-link custom-link">Tours</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="#" class="nav-link">Hotels</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="#" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="#" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+     <!-- main body start  -->
+
+        <div  style="height: 100vh;" class="card-img min-vh-100 rounded-0;" alt="..."></div>
         <div class="card-img-overlay d-flex justify-content-center align-items-center" >
             <div>
           <p style="font-family: 'Montserrat', sans-serif; font-weight:600" class="font display-1 card-text text-white">HOTELS</p>
@@ -71,7 +158,7 @@
       <!-- section 2  -->
 
       <div class="jumbotron text-center  rounded-0 mb-0" >
-        <div class="container">
+        <div class="container-fluid">
             <!-- Stack the columns on mobile by making one full-width and the other half-width -->
             <div class="row mb-5 no-gutters">
                 <!-- column 1  -->
@@ -80,7 +167,7 @@
               </div>
 
               <div class="col-sm-3 "> <div class="form-group d-flex">
-                <select class="form-control col-9 " style="border-radius: 15px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);" id="form1">
+                <select class="form-control col-12 col-sm-11" style="border-radius: 15px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);" id="form1">
                   <option  class="form-control">Nigeria</option>
                   <option class="form-control">Ikeja</option>
                   <option>Ojo</option>
@@ -92,11 +179,11 @@
 
               <div class="col-sm-3 "> 
                   <div class="form-group ">
-                    <select class="form-control col-9 " style="border-radius: 15px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);" id="form2">
+                    <select class="form-control col-12 col-sm-11" style="border-radius: 15px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);" id="form2">
                         <option class="form-control">Ikeja</option>
                         <option  class="form-control">Nigeria</option>
-                        <option>Ojo</option>
-                        <option>sapeple</option>
+                        <option  class="form-control">Ojo</option>
+                        <option class="form-control">sapeple</option>
                       </select>
                   </div>
               </div>
@@ -105,7 +192,7 @@
 
               <div class="col-sm-3 ">
                 <div class="form-group">
-                    <select class="form-control col-9 " style="border-radius: 15px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);" id="form3">
+                    <select class="form-control col-12 col-sm-11 " style="border-radius: 15px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);" id="form3">
                         <option  class="form-control">Popular</option>
                         <option class="form-control">Ikeja</option>
                         <option>Ojo</option>
@@ -193,7 +280,7 @@
             <!-- indicator  -->
             <div  class="d-flex justify-content-center" >
               <a class="btn text-white font-weight-bold px-3 mx-1 rounded-circle h" style="background-color: #464646;"> &#10094; </a>
-              <a class="btn text-white font-weight-bold px-3 mx-1 rounded-circle h" style="background-color: #464646;">1</a>
+              <a class="btn text-white font-weight-bold px-3 mx-1 rounded-circle h" style="background-color: #EBC154;">1</a>
               <a class="btn text-white font-weight-bold px-3 mx-1 rounded-circle h" style="background-color: #464646;">2</a>
               <a class="btn text-white font-weight-bold px-3 mx-1 rounded-circle h" style="background-color: #464646;">3</a>
               <a class="btn text-white font-weight-bold px-3 mx-1 rounded-circle h" style="background-color: #464646;">4</a>
@@ -245,9 +332,67 @@
           </div>
          
         </div>
-
       </div>
-     
+      </div>
+    <footer class="text-center text-white foot" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/about-video.jpg);background-size: cover;  background-position: center; padding: 60px 0 30px;">
+      <div class="container-fluid">
+        <h3 class="font-weight-bold">Subscribe To Our Newsletter</h3>
+        <div class="row justify-content-center mt-4">
+          <div class="col-7 col-md-6 col-lg-4 mr-0 pr-0">
+            <input type="email" class="form-control form-control-lg" placeholder="Email" aria-placeholder="Email" name="name">
+          </div>
+          <div class="col-5 col-md-4 col-lg-2">
+            <button class="btn btn-lg footer-btn small">SUBSCRIBE</button>
+          </div>
+        </div>
+        <div class="footer-navigation">
+          <div class="row">
+            <a href="#" class="footer-logo col-sm-3 mb-2">
+              <img src="./img/discover_travel_logo-2.png"  class="mb-3" alt="Logo" width="200px">
+            </a>
+            <ul class="footer-navs text-right ml-auto  col-sm-9 trans" >
+              <li class="d-inline-block mr-3">
+                <a href="#" class="footer-nav-link  text-white font-weight-bold">Home</a>
+              </li>
+              <li  class="d-inline-block mr-3">
+                <a href="#" class="footer-nav-link text-white font-weight-bold">FAQ</a>
+              </li>
+              <li class="d-inline-block mr-3">
+                <a href="#" class="footer-nav-link text-white font-weight-bold">Tours</a>
+              </li>
+              <li class="d-inline-block mr-3">
+                <a href="#" class="footer-nav-link  text-white font-weight-bold">Hotels</a>
+              </li>
+              <li class="d-inline-block mr-3">
+                <a href="#" class="footer-nav-link text-white font-weight-bold">About Us</a>
+              </li>
+              <li class="d-inline-block">
+                <a href="#" class="footer-nav-link  text-white font-weight-bold">Contact Us</a>
+              </li>
+            </ul>
+          </div>  
+          <hr>
+        </div>
+        <div class="social-icons d-flex justify-content-center mt-5">
+          <div class="mr-4 d-flex justify-content-center align-items-center">
+            <a href="#" class="social-links"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="mr-4 d-flex justify-content-center align-items-center">
+            <a href="#" class="social-links"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="#" class="social-links"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <p class="footer-text mx-auto text-white w-50 mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="copyright-text text-center text-white mt-4">2020 Discover Travel. All rights reserved.</p>
+      </div>
+    </footer>
+    
+
+    <!-- All javascript at the bottom of the page for fast page load -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
