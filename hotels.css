@@ -1,0 +1,54 @@
+/* large screen  */
+@media (min-width: 1000px) {
+    .small {
+      font-size: 1.2rem !important;
+      margin: 0 !important;
+    }
+  }
+  @media (max-width: 1000px) {
+    .display-1 {
+      font-size: 2.2rem;
+    }
+    .small {
+      font-size: 10px !important;
+      margin: 0 !important;
+    }
+    .small-2 {
+      font-size: 18px !important;
+    }
+    .small-3 {
+      width: 40vw !important;
+      margin: auto !important;
+    }
+  }
+  
+  /* small screens  */
+  @media (max-width: 500px) {
+    .display-1 {
+      font-size: 2rem;
+    }
+    .small-4 {
+      height: 13rem !important;
+    }
+  }
+  
+  *,
+  html,
+  body {
+    scroll-behavior: smooth;
+    position: relative;
+  }
+  .card-img {
+    background: linear-gradient(rgba(7, 7, 7, 0.507), rgba(7, 7, 7, 0.514)),
+      url("/images/hotels/home.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }

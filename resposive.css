@@ -1,0 +1,235 @@
+@media all and (max-width: 560px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p, a {
+        font-size: 14px;
+    }
+
+    #hero-section .large-circle {
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        border: 80px solid rgba(196, 196, 196, 0.19);
+        position: absolute;
+        top: calc(45% - 175px);
+        left: calc(50% - 175px);
+        margin: 0;
+        z-index: 90;
+    }
+
+    #hero-section .carousel-caption h1 {
+        margin-top: -100px;
+        font-size: 24px;
+        z-index: 90;
+    }
+
+    #hero-section h1 .bold-heading {
+        font-size: 48px;
+    }
+
+    #hero-section .large-circle li img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #hero-section .large-circle li:nth-child(1) {
+        top: calc(100% + 30px);
+        left: -5%;
+    }
+
+    #hero-section .large-circle li:nth-child(2) {
+        top: calc(100% + 50px);
+        left: calc(50% - 17.5px);
+    }
+
+    #hero-section .large-circle li:nth-child(3) {
+        top: calc(100% + 30px);
+        left: 85%;
+    }
+
+    #hero-section .scroll-button {
+        left: calc(50% - 25px);
+    }
+
+
+
+    .section-padding {
+        padding-top: 0;
+    }
+
+    .top-cities-content {
+        padding: 0 40px !important;
+    }
+
+    #top-cities h2::after, #hotels h2::after, #about-section h2::after, #testimonials h2::after {
+        width: 76px;
+        height: 5px;
+    }
+
+    .top-city-slide h3 {
+        font-size: 14px;
+    }
+
+    #top-cities .top-city-slide {
+        margin-left: 20px;
+    }
+
+    #top-cities .top-city-slide img {
+        height: 176px;
+        width: 135px;
+    }
+
+    #top-cities .top-city-slide .slick-slide {
+        width: 135px !important;
+        margin-right: 10px;
+    }
+
+    #top-cities .top-city-slide .slick-next, #top-cities .top-city-slide .slick-dots {
+        display: none !important;
+    }
+
+
+    #hotels {
+        padding-top: 60px;
+    }
+
+    #hotels .sub-text {
+        width: 85% !important;
+    }
+
+    #hotels img {
+        height: 135px;
+        width: 100%;
+    }
+
+    #hotels .hotel-overlay {
+        height: 135px;
+        width: calc(100% - 30px);
+    }
+
+    #hotels .hotel-info .star-rating {
+        margin-top: -15px;
+    }
+
+    #hotels .hotel-info .star-rating i {
+        font-size: 14px;
+    }
+
+    #hotels .hotel-info .rating {
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+
+    #about-section {
+        padding-top: 60px;
+    }
+    
+    #about-section .row {
+        flex-flow: column-reverse;
+    }
+
+    #about-section .about-content {
+        padding: 0 30px;
+    }
+
+    #about-section .about-video {
+        /* text-align: right; */
+    }
+
+    #about-section .about-video img {
+        width: 80%;
+        height: 150px;
+        margin-left: 20%;
+    }
+
+    #about-section .about-video .video-overlay {
+        width: calc(80% - 30px);
+        height: 150px;
+        margin-left: 20%;
+    }
+
+    #about-section .about-video .play-icon i {
+        font-size: 24px;
+    }
+
+    #about-section .about-video .play-icon {
+        top: 40%;
+        left: 50%;
+        padding: 5px;
+    }
+
+
+
+    #testimonials .carousel-indicators li img {
+        width: 40px;
+        height: 40px;
+        margin-top: 70px;
+    }
+
+    #testimonials .carousel-indicators li {
+        margin: 0 15px;
+    }
+
+
+    footer .footer-btn {
+        font-size: 14px;
+    }
+
+    footer .form-control-lg {
+        font-size: 14px;
+    }
+
+    footer .footer-navigation {
+        padding: 0 10px;
+    }
+/*  window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+          document.getElementById("nav").style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+        } else {
+          document.getElementById("nav").style.backgroundColor = "rgba(0, 0, 0, 0)";
+        }
+      } */
+    footer ul.footer-navs {
+        padding-inline-start: 0;
+        margin-left: 0 !important;
+    }
+
+    footer .footer-navigation {
+        margin-top: 30px;
+    }
+
+    .footer-nav-link {
+        font-size: 8px;
+    }
+
+    .footer-navigation div {
+        flex-direction: column;
+    }
+
+    footer .social-icons {
+        margin-top: 20px !important;
+    }
+
+    footer .social-icons div {
+        height: 30px;
+        width: 30px;
+    }
+
+    footer .footer-text {
+        width: 100% !important;
+    }
+
+    footer .social-links i {
+        font-size: 14px;
+    }
+
+}
