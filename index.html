@@ -39,47 +39,41 @@
     <!-- HEADER SECTION STARTS HERE -->
     <header>
       <!-- NAVIGATION STARTS HERE -->
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand"
-            ><img
-              src="img/discover_travel_logo.png"
-              height="80px"
-              alt="Discover africa logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#responsiveNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="responsiveNavbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item mr-4">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item mr-4">
-                <a href="#" class="nav-link">FAQ</a>
-              </li>
-           
-              <li class="nav-item active mr-4">
-                <a href="#" class="nav-link">Hotels</a>
-              </li>
-              <li class="nav-item mr-4">
-                <a href="#" class="nav-link">About Us</a>
-              </li>
-              <li class="nav-item mr-4">
-                <a href="#" class="nav-link">Contact Us</a>
-              </li>
-              <li class="nav-item mr-4">
-                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-              </li>
-            </ul>
+
+
+
+
+      <nav class="navbar navbar-expand-md fixed-top" id="nav" style="z-index: 999;background: inherit;transition: all 0.5s ease-in;">
+        <a class="navbar-brand" href="#"><img
+          src="img/discover_travel_logo.png"
+          height="80px"
+          alt="Discover africa logo"
+      /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <img src="img/menu.png" alt="" srcset="">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto pl-4 pl-md-0">
+            <a class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link " href="#">FAQS</a>
+            <a class="nav-item nav-link active" href="#">Hotels</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
           </div>
         </div>
       </nav>
+
+
+
+
+
+
+
+
+
+
     </header>
     <div class="card overlay bg-dark position-relative" style="border-radius: 0;">
      <!-- main body start  -->
@@ -245,9 +239,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
           "
         >
-          <div  data-aos="zoom-in" 
-          data-aos-duration="3000"
-          data-aos-easing="ease-in-out" class="row no-gutters position-relative" style="height: 100%;">
+          <div   class="row no-gutters position-relative" style="height: 100%;">
             <div class="col-5">
               <img
                 src="img/img2.jpg"
@@ -583,11 +575,11 @@
         <p class="copyright-text text-center text-white mt-4">2020 Discover Travel. All rights reserved.</p>
       </div>
 
-      <div id="loader">
+      <!-- <div id="loader">
 
       
 
-      </div>
+      </div> -->
     </footer>
     <!-- All javascript at the bottom of the page for fast page load -->
     <script
@@ -616,11 +608,20 @@
 });
 </script>
 <script>
-  window.addEventListener("load",()=>{
-        setTimeout(()=>{
-          document.getElementById("loader").style.transform="translateY(100%)";
-        },10)
+   window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    document.getElementById("nav").style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+  } else {
+    document.getElementById("nav").style.backgroundColor = "rgba(0, 0, 0, 0)";
+  }
+}
+  // window.addEventListener("load",()=>{
+  //       setTimeout(()=>{
+  //         document.getElementById("loader").style.transform="translateY(100%)";
+  //       },10)
         
-      })
+  //     })
 </script>
   </body>

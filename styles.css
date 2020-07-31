@@ -5,249 +5,6 @@ body {
     overflow-x: hidden;
 }
 
-h2 {
-    font-size: 48px;
-}
-
-h3 {
-    font-size: 22px;
-}
-
-p {
-    font-size: 16px;
-    color: #464646;
-}
-
-a {
-    font-size: 16px;
-    color: #EBC154;
-}
-
-a:hover {
-    font-size: 16px;
-    color: #EBC154;
-}
-
-.section-padding {
-    padding-top: 80px;
-}
-
-nav {
-    height: 60px;
-    z-index: 100;
-}
-
-.active .nav-link {
-    color: #EBC154 !important;
-}
-
-.nav-link {
-    color: #fff !important;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.bg-dark {
-    background-color: rgba(0, 0, 0, 0) !important;
-}
-
-#hero-section {
-    position: relative;
-}
-
-#hero-section .carousel-overlay {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-#hero-section .first-slide {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/home-sliders/luca-bravo-O453M2Liufs-unsplash.jpg);
-}
-
-#hero-section .second-slide {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/home-sliders//matthias-mullie-u2-97eBhFEc-unsplash.jpg);
-    background-position: center;
-    height: 100vh;
-}
-
-#hero-section .third-slide {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/home-sliders/sarvaswa-tandon-GNTli-9g-Os-unsplash.jpg);
-}
-
-#hero-section .carousel-inner {
-    margin-top: -60px;
-}
-
-.custom-carousel-img {
-    height: calc(100vh + 60px);
-    object-fit: cover;
-}
-
-#hero-section .carousel-caption h1 {
-    text-transform: uppercase;
-    margin-top: -100px;
-    font-size: 40px;
-    /* position: relative; */
-    z-index: 90;
-}
-
-#hero-section .carousel-caption {
-    z-index:10;
-    color:#fff;
-    text-align:center;
-    top:53%;
-    bottom:auto;
-    -webkit-transform:translate(0, -50%);
-    -ms-transform:translate(0, -50%);
-    transform:translate(0, -50%);
-    }
-
-#hero-section h1 .bold-heading {
-    font-size: 100px;
-}
-
-#hero-section .large-circle {
-    height: 95vh;
-    width: 95vh;
-    border-radius: 50%;
-    border: 100px solid rgba(196, 196, 196, 0.19);
-    position: absolute;
-    top: 10px;
-    left: 13%;
-    z-index: 90;
-}
-
-#hero-section .large-circle li {
-    height: 0;
-    position: absolute;
-}
-
-#hero-section .large-circle li:nth-child(1) {
-    top: 25%;
-    left: -31%
-}
-
-#hero-section .large-circle li:nth-child(2) {
-    top: 50%;
-    left: -31%
-}
-
-#hero-section .large-circle li:nth-child(3) {
-    top: 75%;
-    left: -25%
-}
-
-#hero-section .large-circle li img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border: 2px solid #fff;
-    transition: .5s ease-in-out;
-}
-
-#hero-section .large-circle li.active img {
-    transform: scale(1.4);
-}
-
-#hero-section .carousel-indicators li {
-    opacity: 1 !important;
-}
-
-#hero-section .scroll-button {
-    position: absolute;
-    top: 80%;
-    left: 49%;
-    z-index: 150;
-    padding: 6px;
-    border-radius: 50%;
-    border: 1px solid rgba(196, 196, 196, 0.7);
-}
-
-#hero-section .scroll-button a {
-    color: #fff;
-    border: 5px solid rgba(196, 196, 196, 0.7);
-    padding: 0 6px;
-    border-radius: 50%;
-    display: inline-flex;
-    text-decoration: none;
-}
-
-
-
-#top-cities .row div:nth-child(1) {
-    padding-left: 20px;
-}
-
-.top-cities-content {
-    padding-left: 90px !important;
-}
-
-#top-cities h2::after, #hotels h2::after, #about-section h2::after, #testimonials h2::after {
-    content: '';
-    background-color: #EBC154;
-    width: 150px;
-    height: 10px;
-    display: block;
-    margin-top: 7px;
-}
-
-#top-cities .top-city-slide img {
-    height: 353px;
-    width: 267px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-#top-cities .top-city-slide .slick-slide {
-    width: 267px !important;
-    margin-right: 20px;
-}
-
-#top-cities .top-city-slide .slick-next {
-    right: 40px;
-    width: 30px;
-    padding: 5px;
-    text-align: center;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #EBC154;
-}
-
-#top-cities .top-city-slide .slick-next:before {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='square' stroke-linejoin='arcs'%3E%3Cpath d='M9 18l6-6-6-6'/%3E%3C/svg%3E");
-}
-
-#top-cities .top-city-slide .slick-dots {
-    bottom: -40px;
-    text-align: left;
-}
-
-#top-cities .top-city-slide .slick-dots li {
-    margin: 0px;
-}
-
-#top-cities .top-city-slide .slick-dots li button {
-    background-color: #C4C4C4;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-}
-
-#top-cities .top-city-slide .slick-dots li.slick-active button {
-    width: 24px;
-    border-radius: 10px;
-    background-color: #EBC154;
-}
-
-
-
 #hotels {
     padding-top: 100px;
 }
@@ -299,92 +56,6 @@ nav {
 }
 
 
-
-
-#about-section {
-    padding-top: 150px;
-}
-
-#about-section .about-video img {
-    width: 582px;
-    height: 321px;
-    object-fit: cover;
-    position: relative;
-}
-
-#about-section .about-video {
-    cursor: pointer;
-}
-
-#about-section .about-video .video-overlay {
-    width: 582px;
-    height: 321px;
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-}
-
-#about-section .about-video .play-icon {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    padding: 10px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-}
-
-#about-section .about-video .play-icon i {
-    color: #fff;
-    font-size: 48px;
-    position: relative;
-    z-index: 90;
-}
-
-#about-section .about-content {
-    padding-left: 80px;
-}
-
-
-
-
-#testimonials {
-    padding-top: 100px;
-}
-
-#testimonials h2::after {
-    margin: 7px auto;
-}
-
-#testimonials .rating {
-    margin: 0;
-}
-
-#testimonials .star-rating i {
-    color: #EBC154;
-}
-
-#testimonials .carousel-indicators li img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: 100px;
-    object-fit: cover;
-    transition: .5s ease-in-out;
-}
-
-#testimonials .carousel-indicators li {
-    height: 0;
-    margin: 0 80px;
-    opacity: 1;
-}
-
-#testimonials .carousel-indicators {
-    padding-inline-start: 0;
-}
-
-#testimonials .carousel-indicators li.active img {
-    transform: scale(1.5);
-}
 
 
 
@@ -571,58 +242,7 @@ footer .footer-navigation {
         left: -5%;
     }
 
-    #hero-section .large-circle li:nth-child(2) {
-        top: calc(100% + 50px);
-        left: calc(50% - 17.5px);
-    }
-
-    #hero-section .large-circle li:nth-child(3) {
-        top: calc(100% + 30px);
-        left: 85%;
-    }
-
-    #hero-section .scroll-button {
-        left: calc(50% - 25px);
-    }
-
-
-
-    .section-padding {
-        padding-top: 0;
-    }
-
-    .top-cities-content {
-        padding: 0 40px !important;
-    }
-
-    #top-cities h2::after, #hotels h2::after, #about-section h2::after, #testimonials h2::after {
-        width: 76px;
-        height: 5px;
-    }
-
-    .top-city-slide h3 {
-        font-size: 14px;
-    }
-
-    #top-cities .top-city-slide {
-        margin-left: 20px;
-    }
-
-    #top-cities .top-city-slide img {
-        height: 176px;
-        width: 135px;
-    }
-
-    #top-cities .top-city-slide .slick-slide {
-        width: 135px !important;
-        margin-right: 10px;
-    }
-
-    #top-cities .top-city-slide .slick-next, #top-cities .top-city-slide .slick-dots {
-        display: none !important;
-    }
-
-
+   
     #hotels {
         padding-top: 60px;
     }
@@ -754,13 +374,26 @@ footer .footer-navigation {
 .sub {
     font-size: 1rem!important;
 }
+.nav-link {
+    color: #fff;
+    font-weight: 700;
+}
+.nav-link:hover {
+    color: #EBC154;
+}
+.active {
+    color: #EBC154;
+}
+.h:hover {
+    background-color: #EBC154!important;
+}
 @media (max-width:400px) {
     .sub {
         font-size: 0.6rem!important;
     }
 }
-#loader {
-    background-color: #ebc0549a;
+/* #loader {
+    background-color: #ffd979;
     position: fixed;
     top: 0;
     left:0;
@@ -773,7 +406,7 @@ footer .footer-navigation {
     align-items: center;
     z-index: 999;
   
-  }
+  } */
 
 @media (max-width:576px) {
     .sub {
